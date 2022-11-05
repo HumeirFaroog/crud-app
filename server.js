@@ -26,7 +26,7 @@ app.use('/js',express.static(path.resolve(__dirname,"assests/js")))
 app.use('/images',express.static(path.resolve(__dirname,"assests/images")))
 
 app.get('/',(req,res) => {
-    res.send("Table Application");
+    res.render('index');
 })
 
 app.listen(PORT,() => {
